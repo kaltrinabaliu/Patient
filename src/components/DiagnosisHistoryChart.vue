@@ -39,11 +39,11 @@ watch([systolicValue, diastolicValue], (newData) => {
       chartInstance = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar'], // Example labels for months
+          labels: ['Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar'], 
           datasets: [
             {
               label: 'Systolic',
-              data: [120, 150, 140, 130, 160, newSystolicValue], // Example data + current systolic
+              data: [120, 150, 140, 130, 160, newSystolicValue], 
               borderColor: 'rgb(255, 99, 132)',
               fill: false,
               tension: 0.4,
@@ -52,7 +52,7 @@ watch([systolicValue, diastolicValue], (newData) => {
             },
             {
               label: 'Diastolic',
-              data: [80, 78, 75, 80, 77, newDiastolicValue], // Example data + current diastolic
+              data: [80, 78, 75, 80, 77, newDiastolicValue], 
               borderColor: 'rgb(54, 162, 235)',
               fill: false,
               tension: 0.4,
